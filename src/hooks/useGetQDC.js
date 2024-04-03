@@ -10,7 +10,7 @@ export const useGetQDC = ()=>{
 
   const getSeccio = async()=>{
     try {
-      const response = await fetch('dades/seccio.csv');
+      const response = await fetch('assets/dades/seccio.csv');
       const csvData = await response.text();
 
 
@@ -24,9 +24,9 @@ export const useGetQDC = ()=>{
           const row = {};
                       
           row[headers[0]] = fields[0].trim();
-          row[headers[1]] = '-';
-          row[headers[2]] = '-';
-          row[headers[3]] = '-';
+          row[headers[1]] = 'X';
+          row[headers[2]] = 'X';
+          row[headers[3]] = 'X';
           row[headers[4]] = fields[1].trim();          
           
           return row;
@@ -46,7 +46,7 @@ export const useGetQDC = ()=>{
 
   const getSubSeccio = async()=>{
     try {
-      const response = await fetch('dades/subseccio.csv');
+      const response = await fetch('assets/dades/subseccio.csv');
       const csvData = await response.text();
 
 
@@ -61,8 +61,8 @@ export const useGetQDC = ()=>{
                       
           row[headers[0]] = fields[0].trim();
           row[headers[1]] = fields[1].trim();
-          row[headers[2]] = '-';
-          row[headers[3]] = '-';
+          row[headers[2]] = 'X';
+          row[headers[3]] = 'X';
           row[headers[4]] = fields[2].trim();          
           
           return row;
@@ -82,7 +82,7 @@ export const useGetQDC = ()=>{
   
   const getSubSerie = async()=>{
     try {
-      const response = await fetch('dades/subserie.csv');
+      const response = await fetch('assets/dades/subserie.csv');
       const csvData = await response.text();
 
 
@@ -117,7 +117,7 @@ export const useGetQDC = ()=>{
   }
   const getSerie = async()=>{
    try {
-      const response = await fetch('dades/serie.csv');
+      const response = await fetch('assets/dades/serie.csv');
       const csvData = await response.text();
 
 
@@ -133,7 +133,7 @@ export const useGetQDC = ()=>{
           row[headers[0]] = fields[0].trim();
           row[headers[1]] = fields[1].trim();
           row[headers[2]] = fields[2].trim();
-          row[headers[3]] = '-';
+          row[headers[3]] = 'X';
           row[headers[4]] = fields[3].trim();          
           
           return row;
