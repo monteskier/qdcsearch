@@ -1,3 +1,36 @@
-main{
+:root {
+	--texto: rgba(255,255,255, .7);
+	--blanco: #fff;
+	--input: #3A3B3C;
+	--input-hover: #4b4d4e;
+	--activo: #2D88FF;
+	--gris-claro: #B0B3B8;
+	--fondo-contenido: #242526;
+}
+main {
   margin-top: 30px;
 }
+
+main .barra-busqueda {
+	position: relative;
+	width: 100%;
+}
+
+main .barra-busqueda .icono {
+	position: absolute;
+	top: 6px;
+	left: 15px;
+  color:#242526;
+}
+main .barra-busqueda input {
+	width: 100%;
+	border: none;
+	background:#f2f2f2;
+	height: 40px;
+	border-radius: 100px;
+	padding: 0 0px 0 40px;
+}
+#miTabla thead tr th{
+  padding:5px;
+}
+

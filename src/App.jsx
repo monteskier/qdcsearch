@@ -40,14 +40,14 @@ function App() {
     <>    
     <main className='container'>
       <div className="row">
-        <div className="col-3">
+        <div className="col-3 g-0">
           <Cercador onSubmit={handleSubmit}></Cercador>
         </div>
         <div className="col-9">
-          <table id="miTabla" className="table table-striped table-hover table-sm">
+          <table id="miTabla" className="table table-light table-striped table-hover table-sm">
               <caption>TAULA QDC</caption>
               <thead>
-                <tr className="table-dark">
+                <tr>
                   <th>Seccio</th>
                   <th>Subseccio</th>
                   <th>Serie</th>
