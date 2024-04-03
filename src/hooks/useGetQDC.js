@@ -10,7 +10,7 @@ export const useGetQDC = ()=>{
 
   const getSeccio = async()=>{
     try {
-      const response = await fetch('../../public/dades/seccio.csv');
+      const response = await fetch('dades/seccio.csv');
       const csvData = await response.text();
 
 
@@ -46,7 +46,7 @@ export const useGetQDC = ()=>{
 
   const getSubSeccio = async()=>{
     try {
-      const response = await fetch('../../public/dades/subseccio.csv');
+      const response = await fetch('dades/subseccio.csv');
       const csvData = await response.text();
 
 
@@ -82,7 +82,7 @@ export const useGetQDC = ()=>{
   
   const getSubSerie = async()=>{
     try {
-      const response = await fetch('../../public/dades/subserie.csv');
+      const response = await fetch('dades/subserie.csv');
       const csvData = await response.text();
 
 
@@ -117,7 +117,7 @@ export const useGetQDC = ()=>{
   }
   const getSerie = async()=>{
    try {
-      const response = await fetch('../../public/dades/serie.csv');
+      const response = await fetch('dades/serie.csv');
       const csvData = await response.text();
 
 
